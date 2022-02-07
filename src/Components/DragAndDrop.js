@@ -29,7 +29,7 @@ const DragAndDrop = () => {
         setSuccess(dataFilter.length);
         setErrors(dataError.length);
         axios
-          .post("http://localhost:5000/addMoreEmploy", dataFilter)
+          .post("https://sleepy-garden-57473.herokuapp.com/addMoreEmploy", dataFilter)
           .then((res) => {
             if (res.data) {
               return alert("Employ Added Successfully");

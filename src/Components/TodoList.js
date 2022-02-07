@@ -10,7 +10,7 @@ const TodoList = () => {
     const [dataPerPage, setDataPerPage] = useState(5);
 
     useEffect(() => {
-        axios.get("http://localhost:5000/employees")
+        axios.get("https://sleepy-garden-57473.herokuapp.com/employees")
             .then(res => setTodoData(res.data))
     }, [])
     // console.log(todoData);

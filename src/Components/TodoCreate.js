@@ -10,7 +10,7 @@ const TodoCreate = () => {
     } = useForm();
     const onSubmit = (data) => {
         axios
-            .post("http://localhost:5000/addEmploy", data)
+            .post("https://sleepy-garden-57473.herokuapp.com/addEmploy", data)
             .then((res) => {
                 if (res.data) {
                     return alert("Employ Added Successfully");

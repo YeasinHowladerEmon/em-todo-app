@@ -14,7 +14,7 @@ const SendEmail = () => {
   const onSubmit = async (data) => {
     setSent(true);
     axios
-      .post("http://localhost:5000/sendEmail", data)
+      .post("https://sleepy-garden-57473.herokuapp.com/sendEmail", data)
       .catch((err) => console.log(err.message));
   };
 
